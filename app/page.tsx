@@ -1,6 +1,4 @@
 const Home = () => {
-  console.log("Hello next.js")
-
   return (
     <div>
       <div>
