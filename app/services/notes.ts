@@ -24,6 +24,6 @@ export const getNotes = () => {
   return notes;
 };
 
-export const addNotes = (content: string, important: boolean) => {
+export const addNote = (content: string, important: boolean) => {
   notes.push({ id: nextId++, content, important });
 };
