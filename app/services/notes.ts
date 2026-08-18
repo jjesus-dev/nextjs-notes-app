@@ -31,3 +31,10 @@ export const getNoteById = (id: number) => {
 export const addNote = (content: string, important: boolean) => {
   notes.push({ id: nextId++, content, important });
 };
+
+export const toggleImportance = (id: number) => {
+  const note = notes.find((note) => note.id === id);
+  if (note) {
+    note.important = !note.important;
+  }
+};
